@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 #reading the data
 
-f = open('creditscore.txt','r',errors ='ignore')
+f = open('text\creditscore.txt','r',errors ='ignore')
 fileContents = f.read()
 fileContents = fileContents.lower() #converting to lowercase
 
