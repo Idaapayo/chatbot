@@ -2,14 +2,30 @@
 <html>
 <head>
 <title>Chatbot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
 <h1>Welcome</h1>
-   <form action = "../creditscore.py" method = "POST">
+<h5>Hello my name is Emma.I am here to answer all your creditscore questions and give you tips on saving</h5>
+<p>You may ask questions like</p>
+<ul>
+  <li>What is creditscore</li>
+  <li>What is credit score determined by</li>
+  <li>Tips on how to save</li>
+  <li>What is the largest factor that determines my credit score</li>
+  <li>Ways to improve my credit score</li>
+  <li>Who is a responsible borrower</li>
+  <li>And any other questions you may have about credit score and saving</li>
+</ul>
+</br>
+   <form action = "/" method = "POST">
      Type something: <input type = "text" name = "user">
       <input type = "submit" value = "go">
+
    </form>
+</br>
+{{session['chat_history']}}
 
 </body>
 </html>
